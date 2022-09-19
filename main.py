@@ -107,8 +107,8 @@ def main():
     for item in article_counter[:10]:
         print(item)
     df = df[[utils.ARTICLE, utils.PAGE, utils.ISSUE_NUMBER, utils.DATE, utils.TITLE, utils.MAG]]
-    df.to_csv('Base_de_connaissance.csv')
-    export_to_excel(df, 'Base_de_connaissance.xlsx')
+    df.to_csv('Index_articles.csv')
+    export_to_excel(df, 'Index_articles.xlsx')
 
 
 if __name__ == '__main__':
